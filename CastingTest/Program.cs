@@ -1,6 +1,8 @@
-﻿internal class Program
+﻿using System.Security.Cryptography.X509Certificates;
+
+internal class Program
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
         int myInt = 10;
         byte myByte = (byte)myInt;
@@ -34,5 +36,19 @@
         Console.WriteLine(text);
         text = l.ToString();
         Console.WriteLine(text);
+
+        int val = MyMethod(myBool);
+        Console.WriteLine(val);
+    }
+
+    public static int MyMethod(bool add3)
+    {
+        int value = 12;
+
+        if (add3) 
+            value += 3;
+        else 
+            value -= 2;
+        return value;
     }
 }
