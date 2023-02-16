@@ -41,7 +41,7 @@ internal class Program
         Console.WriteLine(val);
     }
 
-    public static int MyMethod(bool add3)
+    public static int MyMethod(bool add3) // add3 variable is assigned bool
     {
         int value = 12;
 
