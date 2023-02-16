@@ -21,5 +21,18 @@
         myString = myString + myInt + myByte + myDouble + myChar;
         Console.WriteLine(myString);
 
+        // automatic conversions
+        long l = 139401930;
+        short s = 516;
+        double d = l - s;
+        Console.WriteLine(d);
+        d = d / 123.456;
+        Console.WriteLine("After dividing, the answer is " + d);
+
+        // concatenate example
+        string text = "The number for this example is " + l;
+        Console.WriteLine(text);
+        text = l.ToString();
+        Console.WriteLine(text);
     }
 }
